@@ -1,6 +1,6 @@
 
-1. Passo 
-## Para baixar o projeto pelo terminal/linha de comando use:
+### 1. Passo 
+Para baixar o projeto pelo terminal/linha de comando use:
 
 
 ```javascript
@@ -10,8 +10,8 @@ gh repo clone team-de-projectos/air-hockey-em-java
 ou pode simplesmente "baixar o zip", apartir do link:
 - https://github.com/team-de-projectos/air-hockey-em-java
 
-2. Passo
-# Como fazer enviar actualizações do que fizer?
+### 2. Passo
+Como fazer enviar actualizações do que fizer?
 R: Depois de fazer o download ou clonar o projeto, entre nele pelo 
 terminal ou linha de commando.
 
@@ -20,16 +20,24 @@ projeto:
  	- <codigo_que_actualizei>.java
 
 
-3. Passo
-# Crie uma branch, isso so precisa ser feito uma vez
-# apos o download ou clone do projeto pela primeira vez
-```git branch -m minha_branch_para_x```
+
+### 3. Passo
+Crie uma branch, isso so precisa ser feito uma vez
+apos o download ou clone do projeto pela primeira vez
+```
+git branch -m minha_branch_para_x
+```
 
 4. Passo
 # ainda dentro do projeto (usando cmd ou terminal) voce 
 # adiciona a pasta ou ficheiro que vai enviar no git
-```git add <codigo_que_actualizei>.(java, python, js pode ser qualquer extensão)```
-ou ```git add <nome_da_pasta>```
+```
+git add <codigo_que_actualizei>.(java, python, js pode ser qualquer extensão)
+```
+ou 
+```
+git add <nome_da_pasta>
+```
 
 5. Passo
 ## depois de adicionar voce precisa criar um commit, que é como
