@@ -3,7 +3,7 @@
 Para baixar o projeto pelo terminal/linha de comando use:
 
 
-```bash
+```shell
 gh repo clone team-de-projectos/air-hockey-em-java
 ```
 
