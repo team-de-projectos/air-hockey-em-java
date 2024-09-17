@@ -43,7 +43,9 @@ git add <nome_da_pasta>
 
 ### 5. Passo
 depois de adicionar voce precisa criar um commit, que é como tirar uma foto do codigo que voce atualizou.
-```git commit -m "aqui voce precisa descrever o que alterou/atualizou"```
+```shell
+git commit -m "aqui voce precisa descrever o que alterou/atualizou"
+```
 
 
 ### 6. Passo
