@@ -16,40 +16,41 @@ R: Depois de fazer o download ou clonar o projeto, entre nele pelo
 terminal ou linha de commando.
 
 projeto:
+```shell
  - <src> (pasta onde esta os codigos. exemplo)
  	- <codigo_que_actualizei>.java
-
-
+```
 
 ### 3. Passo
 Crie uma branch, isso so precisa ser feito uma vez
 apos o download ou clone do projeto pela primeira vez
-```
+```shell
 git branch -m minha_branch_para_x
 ```
 
-4. Passo
-# ainda dentro do projeto (usando cmd ou terminal) voce 
-# adiciona a pasta ou ficheiro que vai enviar no git
-```
+### 4. Passo
+ainda dentro do projeto (usando cmd ou terminal) voce adiciona a pasta ou ficheiro que vai enviar no git
+
+```shell
 git add <codigo_que_actualizei>.(java, python, js pode ser qualquer extensão)
 ```
+
 ou 
-```
+
+```shell
 git add <nome_da_pasta>
 ```
 
-5. Passo
-## depois de adicionar voce precisa criar um commit, que é como
-## tirar uma foto do codigo que voce atualizou.
+### 5. Passo
+depois de adicionar voce precisa criar um commit, que é como tirar uma foto do codigo que voce atualizou.
 ```git commit -m "aqui voce precisa descrever o que alterou/atualizou"```
 
-6. Passo
-## Por último voce vai enviar essas actualizacoes na branch (ramo)
-## que voce criou. pensa em branch (ramo) como um ramo de uma arvore
-## ela pode ter varios ramos, no git é a mesma coisa ele serve para
-## trabalhar em codigos paralelos sem alterar o codigo principal
-```git push -u origin minha_branch_para_x```
+
+### 6. Passo
+Por último voce vai enviar essas actualizacoes na branch (ramo) que voce criou. pensa em branch (ramo) como um ramo de uma arvore ela pode ter varios ramos, no git é a mesma coisa ele serve para trabalhar em codigos paralelos sem alterar o codigo principal
+```shell
+git push -u origin minha_branch_para_x
+```
 
 
 
