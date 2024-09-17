@@ -1,0 +1,27 @@
+
+
+# Para baixar o projeto pelo terminal/linha de comando use:
+gh repo clone team-de-projectos/air-hockey-em-java
+
+ou pode simplesmente "baixar o zip", apartir do link:
+- https://github.com/team-de-projectos/air-hockey-em-java
+
+
+
+# Como fazer enviar actualizações do que fizer?
+R: Depois de fazer o download ou clonar o projeto, entre nele pelo 
+terminal ou linha de commando.
+
+projeto:
+ - <src> (pasta onde esta os codigos. exemplo)
+ 	- <codigo_que_actualizei>.java
+
+# dentro do projeto (usando cmd ou terminal) primeiro voce 
+# adiciona a pasta ou ficheiro que vai enviar no git
+git add <codigo_que_actualizei>.java
+
+# depois
+
+
+
+
