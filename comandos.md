@@ -20,8 +20,8 @@ projeto:
 <projeto_x>
  - <src> (pasta onde esta os codigos. exemplo)
  	- <codigo_que_actualizei>.java
- - classes
- 	- classe_bla_bla_bla.java
+ 	- classes
+ 		- classe_bla_bla_bla.java
 ```
 
 ### 3. Passo
