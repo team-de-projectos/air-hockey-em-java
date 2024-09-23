@@ -20,19 +20,20 @@ public class TelaPrincipal extends Frame {
     
     public TelaPrincipal() {
         
-        PaintingField pf = new PaintingField(width, height);
-        Jogador jogador_1 = new Jogador(0, 0, true, new Dimension(width, height));
-        Jogador jogador_2 = new Jogador(0, 0, false, new Dimension(width, height));
+        PaintingField pf = new PaintingField(width, height); // cria instancia do campo que a gente vai pintar o nosso jogo
+        Jogador jogador_1 = new Jogador(0, 0, true, new Dimension(width, height));  // cria jogador 1
+        Jogador jogador_2 = new Jogador(0, 0, false, new Dimension(width, height)); // cria jogador 2
         
-        pf.addGameObject(jogador_1);
+        // adiciona os jogadores 1 e 2 ao array de jogador da classe PaintField que eh o nosso campo
+        pf.addGameObject(jogador_1); 
         pf.addGameObject(jogador_2);
         
         add(pf);
         
         setLayout(null);
-        setSize(width, height);
-        setLocationRelativeTo(null);
-        setTitle("AirHockey - Game do time!");
+        setSize(width, height); // define o tamanho da tela
+        setLocationRelativeTo(null); // define a posicao da tela, no caso ela vai ficar no centro
+        setTitle("AirHockey - Game do time!"); // define o titulo da tela que vai aparecer em cima da janela
         
         
         addWindowListener(new WindowAdapter() {
