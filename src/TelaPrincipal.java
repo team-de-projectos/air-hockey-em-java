@@ -3,26 +3,31 @@
  * @author caasieu
  */
 
-
+import Classes.Jogador;
+import java.awt.Dimension;
 import java.awt.Frame;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
 import javax.swing.SwingUtilities;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
-
-// import static components.Lado.*;
-
 
 //  implements Runnable, KeyListener 
 public class TelaPrincipal extends Frame {
     
     private final int width = 840;
     private final int height = 480;
-    //private final CardLayout cardLayout;
-    //private final JPanel mainPanel;
     
     public TelaPrincipal() {
         
         PaintingField pf = new PaintingField(width, height);
+        Jogador jogador_1 = new Jogador(0, 0, true, new Dimension(width, height));
+        Jogador jogador_2 = new Jogador(0, 0, false, new Dimension(width, height));
+        
+        pf.addGameObject(jogador_1);
+        pf.addGameObject(jogador_2);
+        
         add(pf);
         
         setLayout(null);
@@ -38,6 +43,20 @@ public class TelaPrincipal extends Frame {
             }
         });
         
+        
+        // Os controles serão colocados aqui (Rodrigo e Vinicius)
+        pf.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                
+                // funcao chamada para movimentar o jogador
+                // jogador_1.andar(45, 0);
+                
+                // Isso serve para pintar a tela novamente quando o jogador anda
+                pf.repaint();
+            } 
+        });
+        
     }
     
     public static void main(String[] args) {
@@ -45,4 +64,5 @@ public class TelaPrincipal extends Frame {
             new TelaPrincipal().setVisible(true);
         });
     }
+
 }
