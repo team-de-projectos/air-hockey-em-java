@@ -26,17 +26,17 @@ import java.util.List;
 
 
 public class PaintingField extends Canvas {
-    private List<Jogador> jogadores;
+    private List<Jogador> jogadores; // um array de jogadores do tipo "Jogador"
     private BufferedImage offscreenImage;
     
     public PaintingField(int width, int height) {
         setSize(new Dimension(width, height));
         this.setBackground(Color.BLACK);
-        jogadores = new ArrayList<>();
+        jogadores = new ArrayList<>(); // cria uma lista vazia de jogadores
         
         
         setFocusable(true); // permite o canvas receber events
-        requestFocusInWindow(); // pede o foco para usar o teclado
+        requestFocusInWindow(); // pede o foco para usar o tecladoé
         offscreenImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
     
     }
