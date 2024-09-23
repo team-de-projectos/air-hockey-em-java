@@ -4,7 +4,5 @@ A gente vai desenvolver uma versão simples do jogo "Air Hockey" em JAVA e vai a
 
 ### Demo image
 
-This code creates 300.000 cubes using instancing.
-
 ![alt "imagem de exemplo"](field.png)
 
