@@ -34,8 +34,9 @@ public class PaintingField extends Canvas {
         this.setBackground(Color.BLACK);
         jogadores = new ArrayList<>();
         
-        setFocusable(true); // Make the painting field focusable to receive key events
-        requestFocusInWindow(); // Request focus for key events
+        
+        setFocusable(true); // permite o canvas receber events
+        requestFocusInWindow(); // pede o foco para usar o teclado
         offscreenImage = new BufferedImage(width, height, BufferedImage.TYPE_INT_ARGB);
     
     }
@@ -51,10 +52,11 @@ public class PaintingField extends Canvas {
         Graphics2D g2 = (Graphics2D) offscreenImage.getGraphics();
         g2.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         
-        // Clear the offscreen image
+        // isso nao eh importante por agora
         g2.setColor(Color.BLACK);
         g2.fillRect(0, 0, offscreenImage.getWidth(), offscreenImage.getHeight());
         
+        // desenhando as bordas e a linha do meio e pintando todas de branco
         g2.setColor(new Color(255,255,255));    
         g2.fillRect(0, 0, 10, this.getSize().height/3);
         g2.fillRect(0, 320, 10, this.getSize().height/3);
@@ -62,15 +64,15 @@ public class PaintingField extends Canvas {
         g2.fillRect(this.getSize().width - 10, 320, 15, this.getSize().height/3);
         g2.fillRect(this.getSize().width/2, 0, 10, this.getSize().height);
         
-        //g2.drawOval(this.getSize().width/2 - 55, this.getSize().height/2 - 60, 120, 120); 
-        //g2.drawOval(this.getSize().width/2 - 25, this.getSize().height/2 - 30, 60, 60); 
+        // desenhando a bolinha no meio
         g2.drawOval(this.getSize().width/2 - 40, this.getSize().height/2 - 45, 90, 90); 
         
         
-        // Draw all game objects
+        // desenha todos os jogadores, isso eh um loop tambem possivel em java
         for (Jogador obj : jogadores) {
             obj.draw(g2);
         }
+        
         
         g2.dispose();
         g.drawImage(offscreenImage, 0, 0, null);
